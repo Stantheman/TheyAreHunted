@@ -8,7 +8,7 @@ use File::Path "make_path";
 use LWP::UserAgent;
 
 my $json_filename = shift or die "Usage: $0 /path/to/json";
-my $list_filename = 'songids.txt';
+my $list_filename = '/srv/git/wearehunted/songids.txt';
 open (my $json_fh, '<', $json_filename) or die "Can't open $json_filename: $!";
 open (my $list_fh, '+<', $list_filename) or die "Can't open $list_filename: $!";
 my @existing_songs = <$list_fh>;
