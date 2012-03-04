@@ -2,7 +2,6 @@
 use strict;
 use warnings;
 use JSON;
-use Data::Printer;
 use MP3::Tag;
 use File::Path "make_path";
 use LWP::UserAgent;
