@@ -42,6 +42,7 @@ Notes
 -----
 
 Here's a few notes:
+
  * The songs are all 128kbps quality. If that's a problem, you should probably be buying your music.
  * Be nice to WeArehunted. They're really awesome. If you slam their servers, they'll either ban you or everyone.
  * This script is provided for educational purposes only. I don't take any responsibility for anything you do with this.
