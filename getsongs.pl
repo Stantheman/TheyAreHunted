@@ -3,13 +3,13 @@ use strict;
 use warnings;
 use JSON;
 use MP3::Tag;
-use File::Path 'make_path';
+use File::Path 'mkpath';
 use LWP::UserAgent;
 use FindBin '$Bin';
 
 # figure out where to stuff the songs
 my $song_path = shift || $Bin . '/wearehunted_songs/';
-make_path($song_path) unless (-d $song_path);
+mkpath($song_path) unless (-d $song_path);
 
 # get the song ids from our flat file
 my $list_filename = $Bin . "/songids.txt";
