@@ -20,7 +20,11 @@ TheyAreHunted is a perl script and uses the following non-standard modules:
  * LWP::UserAgent
  * JSON
 
-You can install these using your favorite method to install perl modules. If you don't have a favorite method, try cpanm:
+If you're using Debian or Ubuntu, you can install the required package with this line: 
+
+    sudo apt-get install libmp3-tag-perl libwww-perl libjson-perl
+
+Alternatively, you can install these using your favorite method to install perl modules. If you don't have a favorite method, try cpanm:
 
     curl -L http://cpanmin.us | perl - --sudo App::cpanminus
 	cpanm --sudo MP3::Tag LWP::UserAgent JSON
