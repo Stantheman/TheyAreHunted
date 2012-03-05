@@ -13,7 +13,12 @@ mkpath($song_path) unless (-d $song_path);
 
 # get the song ids from our flat file
 my $list_filename = $Bin . "/songids.txt";
-open (my $list_fh, '+<', $list_filename) or die "Can't open $list_filename: $!";
+my $list_fh;
+if (-e $list_filename) {
+    open ($list_fh, '+<', $list_filename) or die "Can't open $list_filename: $!";
+} else {
+    open ($list_fh, '+>', $list_filename) or die "Can't create $list_filename: $!";
+}
 my @existing_songs = <$list_fh>;
 
 # suck in the json with a believable looking UA string
