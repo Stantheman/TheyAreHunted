@@ -9,7 +9,6 @@ use Cwd;
 
 # figure out where to stuff the songs
 my $song_path = shift || getcwd . '/wearehunted_songs/';
-#'/home/stan/new-songs/wearehunted';
 make_path($song_path) unless (-d $song_path);
 
 # get the song ids from our flat file
