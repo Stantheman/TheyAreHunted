@@ -78,6 +78,6 @@ sub _get_song_url {
 		'X-Hunted'         => 'Halt! Who goes there?',
 		'X-Requested-With' => 'XMLHttpRequest'
 	);
-    die "WeAreHunted returned an error: $response->error_as_HTML" if $response->is_error;
+	die "WeAreHunted returned an error: $response->error_as_HTML" if $response->is_error;
 	return decode_json($response->decoded_content)->{files}[0];
 }
