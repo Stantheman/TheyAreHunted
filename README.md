@@ -4,7 +4,7 @@ TheyAreHunted
 Deprecated
 ----------
 
-WeAreHunted was acquired by Twitter and is now Twitter Music. Good job guys! This script doesn't do anything useful know though.
+WeAreHunted was acquired by Twitter and is now Twitter Music. Good job guys! This script doesn't do anything useful now though.
 
 This script downloads every song from the emerging section of wearehunted.com. Tested on Debian, but should work with any flavor of Linux (probably Macs too).  
 
